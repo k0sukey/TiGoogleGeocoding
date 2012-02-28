@@ -1,5 +1,52 @@
 Usage Resources/app.js
 
+Example.
+geocoding = require('geocoding').Geocoding;
+
+geocoding.forward({
+    address: '',
+    language: Ti.Platform.locale,
+    bounds: [
+        {
+            latitude: 0,
+            longitude: 0
+        },
+        {
+            latitude: 0,
+            longitude: 0
+        }
+    ],
+    region: '',
+    sensor: 'false', // This is String, do not Boolean
+    success: function(e){
+    },
+    error: function(e){
+    }
+});
+
+geocoding.reverse({
+    latitude: 0,
+    longitude: 0,
+    language: Ti.Platform.locale,
+    bounds: [
+        {
+            latitude: 0,
+            longitude: 0
+        },
+        {
+            latitude: 0,
+            longitude: 0
+        }
+    ],
+    region: '',
+    sensor: 'false', // This is String, do not Boolean
+    success: function(e){
+    },
+    error: function(e){
+    }
+});
+
+
 
 Welcome to your Appcelerator Titanium Mobile Project
 
