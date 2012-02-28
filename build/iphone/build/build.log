@@ -1,0 +1,80 @@
+================================================================================
+Appcelerator Titanium Diagnostics Build Log
+The contents of this file are useful to send to Appcelerator Support if
+reporting an issue to help us understand your environment, build settings
+and aid in debugging. Please attach this log to any issue that you report.
+================================================================================
+
+Starting build at 02/28/12 13:01
+
+Build details:
+
+   timestamp=12/22/11 13:09
+   module_apiversion=2
+   version=1.8.0.1
+   githash=fbdc96f
+
+
+Script arguments:
+   /Users/k_isobe/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/iphone/builder.py
+   simulator
+   5.0
+   /Users/k_isobe/src/TiGoogleGeocoding
+   be.k0suke.tigooglegeocoding
+   TiGoogleGeocoding
+   universal
+   iphone
+   
+
+Building from: /Users/k_isobe/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/iphone
+Platform: Darwin Kernel Version 11.3.0: Thu Jan 12 18:47:41 PST 2012; root:xnu-1699.24.23~1/RELEASE_X86_64
+
+Xcode path is: /Developer
+
+
+githash=fbdc96f, existing_git_hash=fbdc96f
+writing contents of /Users/k_isobe/src/TiGoogleGeocoding/build/iphone/project.xcconfig:
+
+TI_VERSION=1.8.0.1
+TI_SDK_DIR=/Users/k_isobe/Library/Application Support/Titanium/mobilesdk/osx/$(TI_VERSION)/iphone
+TI_APPID=be.k0suke.tigooglegeocoding
+OTHER_LDFLAGS[sdk=iphoneos*]=$(inherited) -weak_framework iAd
+OTHER_LDFLAGS[sdk=iphonesimulator*]=$(inherited) -weak_framework iAd
+#include "module"
+
+old contents
+
+
+Generated the following stylecode code:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>classes</key>
+		<dict>
+</dict>
+
+		<key>classes_density</key>
+		<dict>
+</dict>
+
+		<key>ids</key>
+		<dict>
+</dict>
+
+		<key>ids_density</key>
+		<dict>
+</dict>
+
+		<key>tags</key>
+		<dict>
+</dict>
+
+		<key>tags_density</key>
+		<dict>
+</dict>
+
+	</dict>
+</plist>
+Finishing build

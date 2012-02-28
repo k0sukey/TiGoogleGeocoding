@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <deployment-targets>
+        <target device="mobileweb">true</target>
+        <target device="iphone">true</target>
+        <target device="ipad">true</target>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+    </deployment-targets>
+    <sdk-version>1.8.0.1</sdk-version>
+    <id>be.k0suke.tigooglegeocoding</id>
+    <name>TiGoogleGeocoding</name>
+    <version>1.0</version>
+    <publisher>k_isobe</publisher>
+    <url>http://</url>
+    <description>not specified</description>
+    <copyright>2012 by k_isobe</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>false</analytics>
+    <guid>5aa52570-3cd2-4a7c-b318-56bbb6f2ee53</guid>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <modules/>
+</ti:app>
