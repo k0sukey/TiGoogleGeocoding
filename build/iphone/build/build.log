@@ -5,7 +5,7 @@ reporting an issue to help us understand your environment, build settings
 and aid in debugging. Please attach this log to any issue that you report.
 ================================================================================
 
-Starting build at 02/28/12 13:01
+Starting build at 02/28/12 13:24
 
 Build details:
 
@@ -32,19 +32,9 @@ Platform: Darwin Kernel Version 11.3.0: Thu Jan 12 18:47:41 PST 2012; root:xnu-1
 Xcode path is: /Developer
 
 
-githash=fbdc96f, existing_git_hash=fbdc96f
-writing contents of /Users/k_isobe/src/TiGoogleGeocoding/build/iphone/project.xcconfig:
-
-TI_VERSION=1.8.0.1
-TI_SDK_DIR=/Users/k_isobe/Library/Application Support/Titanium/mobilesdk/osx/$(TI_VERSION)/iphone
-TI_APPID=be.k0suke.tigooglegeocoding
-OTHER_LDFLAGS[sdk=iphoneos*]=$(inherited) -weak_framework iAd
-OTHER_LDFLAGS[sdk=iphonesimulator*]=$(inherited) -weak_framework iAd
-#include "module"
-
-old contents
-
-
+githash=fbdc96f, existing_git_hash=None
+forcing rebuild since libhash (None) not matching (086dba02ebf4956989e6555c3d754630)
+Performing full rebuild
 Generated the following stylecode code:
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -77,4 +67,20 @@ Generated the following stylecode code:
 
 	</dict>
 </plist>
-Finishing build
+Starting Xcode compile with the following arguments:
+
+    xcodebuild
+    -target
+    TiGoogleGeocoding-universal
+    -configuration
+    Debug
+    -sdk
+    iphonesimulator5.0
+    GCC_PREPROCESSOR_DEFINITIONS=__LOG__ID__=5aa52570-3cd2-4a7c-b318-56bbb6f2ee53 DEPLOYTYPE=development TI_DEVELOPMENT=1 DEBUG=1 TI_VERSION=1.8.0.1  
+    IPHONEOS_DEPLOYMENT_TARGET=4.0
+    TARGETED_DEVICE_FAMILY=1,2
+    VALID_ARCHS=armv6 armv7 i386
+
+app_id = be.k0suke.tigooglegeocoding
+
+
