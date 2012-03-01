@@ -1,6 +1,9 @@
-Usage Resources/app.js
+Language fix of Chinese.
+Get the raw data of success callback.
 
-Example.
+```
+
+Usage Resources/app.js (and example)
 geocoding = require('geocoding').Geocoding;
 
 geocoding.forward({

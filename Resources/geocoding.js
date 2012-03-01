@@ -31,6 +31,12 @@ exports.Geocoding = (function(global){
 		var language = options.language || '';
 		var sensor = options.sensor || 'false';
 
+		if (language === 'zh_hans') {
+			language = 'zh-CN';
+		} else if (language === 'zh_hant') {
+			language = 'zh-TW';
+		}
+
 		var xhr = Ti.Network.createHTTPClient();
 		xhr.open('GET', 'http://maps.googleapis.com/maps/api/geocode/json?address=' + address + '&bounds=' + bounds + '&region=' + region + '&language=' + language + '&sensor=' + sensor);
 		xhr.onload = function(){
@@ -48,7 +54,8 @@ exports.Geocoding = (function(global){
 
 				options.success({
 					status: json.status,
-					results: results
+					results: results,
+					raw: json.results
 				});
 			} else {
 				options.error({ error: json.status });
@@ -75,6 +82,12 @@ exports.Geocoding = (function(global){
 		var language = options.language || '';
 		var sensor = options.sensor || 'false';
 
+		if (language === 'zh_hans') {
+			language = 'zh-CN';
+		} else if (language === 'zh_hant') {
+			language = 'zh-TW';
+		}
+
 		var xhr = Ti.Network.createHTTPClient();
 		xhr.open('GET', 'http://maps.googleapis.com/maps/api/geocode/json?latlng=' + latlng + '&bounds=' + bounds + '&region=' + region + '&language=' + language + '&sensor=' + sensor);
 		xhr.onload = function(){
@@ -91,7 +104,8 @@ exports.Geocoding = (function(global){
 
 				options.success({
 					status: json.status,
-					results: results
+					results: results,
+					raw: json.results
 				});
 			} else {
 				options.error({ error: json.status });
